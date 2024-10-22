@@ -5,16 +5,22 @@ spring:
     active: peer1
   lifecycle:
     timeout-per-shutdown-phase: 10s
+    
+  security:
+    user:
+      name: admin
+      password: 1234
 
 eureka:
   client:
-    allow-redirects: false
+    register-with-eureka: false
     fetch-registry: false
     service-url:
-      defaultZone: \http://${spring.security.user.name}:${spring.security.user.password}@localhost:8761/eureka/.http://${spring.security.user.name}:${spring.security.user.password}@localhost:8762/eureka/
-  #  server:
-#    eviction-interval-timer-in-ms: 5000
-#    response-cache-update-interval-ms=: 5000
+      defaultZone: http://admin:1234@localhost:8761/eureka/
+#                ,http://admin:1234@localhost:8762/eureka/
+  # server:
+  #   eviction-interval-timer-in-ms: 5000
+  #   response-cache-update-interval-ms: 5000
 
 ---
 

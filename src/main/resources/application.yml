@@ -5,6 +5,7 @@ spring:
     active: peer1
   lifecycle:
     timeout-per-shutdown-phase: 10s
+    
   security:
     user:
       name: admin

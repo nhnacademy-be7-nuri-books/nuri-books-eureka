@@ -27,7 +27,7 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           port: ${{ secrets.SSH_PORT }}
           source: "target/*.jar"
-          target: "~/eureka/eureka.jar"
+          target: "~/eureka"
           rm: true
 
       - name: execute shell script
@@ -38,4 +38,4 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           port: ${{ secrets.SSH_PORT }}
           script_stop: true
-          script: "./eureka/startup.sh"
+          script: "./startup.sh 8761 eureka"

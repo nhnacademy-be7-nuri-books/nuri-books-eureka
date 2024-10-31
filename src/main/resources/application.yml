@@ -1,0 +1,47 @@
+spring:
+  application:
+    name: eureka
+  profiles:
+    active: peer1
+  lifecycle:
+    timeout-per-shutdown-phase: 10s
+    
+  security:
+    user:
+      name: admin
+      password: 1234
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://admin:1234@localhost:8761/eureka/
+#                ,http://admin:1234@localhost:8762/eureka/
+  # server:
+  #   eviction-interval-timer-in-ms: 5000
+  #   response-cache-update-interval-ms: 5000
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: peer1
+server:
+  port: 8761
+eureka:
+  instance:
+    hostname: peer1
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: peer2
+server:
+  port: 8762
+eureka:
+  instance:
+    hostname: peer2

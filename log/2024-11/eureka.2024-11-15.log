@@ -1,0 +1,99 @@
+2024-11-15 22:59:27 [INFO] [main] [s.nuribooks.eureka.EurekaApplication] - Starting EurekaApplication using Java 21.0.4 with PID 13976 (C:\Users\jggy0\Downloads\nuri-books-eureka\target\classes started by jggy0 in C:\Users\jggy0\Downloads\nuri-books-eureka)
+2024-11-15 22:59:27 [INFO] [main] [s.nuribooks.eureka.EurekaApplication] - The following 1 profile is active: "peer1"
+2024-11-15 22:59:30 [INFO] [main] [o.s.cloud.context.scope.GenericScope] - BeanFactory id=f27a2486-7928-3f5c-99af-cf65bb5fead5
+2024-11-15 22:59:30 [WARN] [main] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-11-15 22:59:30 [WARN] [main] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-11-15 22:59:30 [INFO] [main] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port 8761 (http)
+2024-11-15 22:59:30 [INFO] [main] [o.a.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8761"]
+2024-11-15 22:59:30 [INFO] [main] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
+2024-11-15 22:59:30 [INFO] [main] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-15 22:59:30 [INFO] [main] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2024-11-15 22:59:30 [INFO] [main] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 2994 ms
+2024-11-15 22:59:32 [INFO] [main] [c.n.d.p.DiscoveryJerseyProvider] - Using JSON encoding codec LegacyJacksonJson
+2024-11-15 22:59:32 [INFO] [main] [c.n.d.p.DiscoveryJerseyProvider] - Using JSON decoding codec LegacyJacksonJson
+2024-11-15 22:59:32 [INFO] [main] [c.n.d.p.DiscoveryJerseyProvider] - Using XML encoding codec XStreamXml
+2024-11-15 22:59:32 [INFO] [main] [c.n.d.p.DiscoveryJerseyProvider] - Using XML decoding codec XStreamXml
+2024-11-15 22:59:33 [INFO] [main] [o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-11-15 22:59:33 [INFO] [main] [o.s.b.a.e.web.EndpointLinksResolver] - Exposing 1 endpoint beneath base path '/actuator'
+2024-11-15 22:59:34 [WARN] [main] [o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger] - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-11-15 22:59:34 [INFO] [main] [o.s.c.n.eureka.InstanceInfoFactory] - Setting initial instance status as: STARTING
+2024-11-15 22:59:34 [INFO] [main] [c.netflix.discovery.DiscoveryClient] - Initializing Eureka in region us-east-1
+2024-11-15 22:59:34 [INFO] [main] [c.netflix.discovery.DiscoveryClient] - Client configured to neither register nor query for data.
+2024-11-15 22:59:34 [INFO] [main] [c.netflix.discovery.DiscoveryClient] - Discovery Client initialized at timestamp 1731679174658 with initial instances count: 0
+2024-11-15 22:59:34 [INFO] [main] [c.n.e.DefaultEurekaServerContext] - Initializing ...
+2024-11-15 22:59:34 [INFO] [main] [c.n.eureka.cluster.PeerEurekaNodes] - Adding new peer nodes [http://admin:1234@localhost:8761/eureka/]
+2024-11-15 22:59:35 [INFO] [main] [c.n.d.p.DiscoveryJerseyProvider] - Using JSON encoding codec LegacyJacksonJson
+2024-11-15 22:59:35 [INFO] [main] [c.n.d.p.DiscoveryJerseyProvider] - Using JSON decoding codec LegacyJacksonJson
+2024-11-15 22:59:35 [INFO] [main] [c.n.d.p.DiscoveryJerseyProvider] - Using XML encoding codec XStreamXml
+2024-11-15 22:59:35 [INFO] [main] [c.n.d.p.DiscoveryJerseyProvider] - Using XML decoding codec XStreamXml
+2024-11-15 22:59:35 [INFO] [main] [c.n.eureka.cluster.PeerEurekaNodes] - Replica node URL:  http://admin:1234@localhost:8761/eureka/
+2024-11-15 22:59:35 [INFO] [main] [c.n.e.r.AbstractInstanceRegistry] - Finished initializing remote region registries. All known remote regions: []
+2024-11-15 22:59:35 [INFO] [main] [c.n.e.DefaultEurekaServerContext] - Initialized
+2024-11-15 22:59:35 [INFO] [main] [o.s.c.n.e.s.EurekaServiceRegistry] - Registering application EUREKA with eureka with status UP
+2024-11-15 22:59:35 [INFO] [main] [o.a.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8761"]
+2024-11-15 22:59:35 [INFO] [main] [o.s.c.n.e.s.EurekaServiceRegistry] - Unregistering application EUREKA with eureka with status DOWN
+2024-11-15 22:59:35 [WARN] [main] [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2024-11-15 22:59:35 [INFO] [main] [c.n.e.DefaultEurekaServerContext] - Shutting down ...
+2024-11-15 22:59:35 [INFO] [main] [c.n.e.DefaultEurekaServerContext] - Shut down
+2024-11-15 22:59:35 [ERROR] [Eureka-Jersey3Client-Conn-Cleaner2] [c.n.d.s.t.j.EurekaJersey3ClientImpl] - Cannot clean connections
+java.lang.IllegalStateException: Client instance has been closed.
+	at org.glassfish.jersey.internal.guava.Preconditions.checkState(Preconditions.java:169)
+	at org.glassfish.jersey.client.JerseyClient.checkNotClosed(JerseyClient.java:248)
+	at org.glassfish.jersey.client.JerseyClient.getConfiguration(JerseyClient.java:363)
+	at org.glassfish.jersey.client.JerseyClient.getConfiguration(JerseyClient.java:54)
+	at com.netflix.discovery.shared.transport.jersey3.EurekaJersey3ClientImpl$ConnectionCleanerTask.run(EurekaJersey3ClientImpl.java:338)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-11-15 22:59:35 [INFO] [Thread-9] [o.s.c.n.e.s.EurekaServerBootstrap] - isAws returned false
+2024-11-15 22:59:35 [INFO] [Thread-9] [o.s.c.n.e.s.EurekaServerBootstrap] - Initialized server context
+2024-11-15 22:59:35 [INFO] [Thread-9] [c.n.e.r.PeerAwareInstanceRegistryImpl] - Got 1 instances from neighboring DS node
+2024-11-15 22:59:35 [INFO] [Thread-9] [c.n.e.r.PeerAwareInstanceRegistryImpl] - Renew threshold is: 1
+2024-11-15 22:59:35 [INFO] [Thread-9] [c.n.e.r.PeerAwareInstanceRegistryImpl] - Changing status to UP
+2024-11-15 22:59:35 [ERROR] [Thread-9] [o.s.c.n.e.s.EurekaServerBootstrap] - Cannot bootstrap eureka server :
+java.lang.IllegalStateException: Timer already cancelled.
+	at java.base/java.util.Timer.sched(Timer.java:409)
+	at java.base/java.util.Timer.schedule(Timer.java:260)
+	at com.netflix.eureka.registry.AbstractInstanceRegistry.postInit(AbstractInstanceRegistry.java:1226)
+	at com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl.openForTraffic(PeerAwareInstanceRegistryImpl.java:259)
+	at org.springframework.cloud.netflix.eureka.server.InstanceRegistry.openForTraffic(InstanceRegistry.java:77)
+	at org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap.initEurekaServerContext(EurekaServerBootstrap.java:112)
+	at org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap.contextInitialized(EurekaServerBootstrap.java:70)
+	at org.springframework.cloud.netflix.eureka.server.EurekaServerInitializerConfiguration.lambda$start$0(EurekaServerInitializerConfiguration.java:67)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-11-15 22:59:35 [ERROR] [Thread-9] [o.s.c.n.e.s.EurekaServerInitializerConfiguration] - Could not initialize Eureka servlet context
+java.lang.RuntimeException: Cannot bootstrap eureka server :
+	at org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap.contextInitialized(EurekaServerBootstrap.java:76)
+	at org.springframework.cloud.netflix.eureka.server.EurekaServerInitializerConfiguration.lambda$start$0(EurekaServerInitializerConfiguration.java:67)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.IllegalStateException: Timer already cancelled.
+	at java.base/java.util.Timer.sched(Timer.java:409)
+	at java.base/java.util.Timer.schedule(Timer.java:260)
+	at com.netflix.eureka.registry.AbstractInstanceRegistry.postInit(AbstractInstanceRegistry.java:1226)
+	at com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl.openForTraffic(PeerAwareInstanceRegistryImpl.java:259)
+	at org.springframework.cloud.netflix.eureka.server.InstanceRegistry.openForTraffic(InstanceRegistry.java:77)
+	at org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap.initEurekaServerContext(EurekaServerBootstrap.java:112)
+	at org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap.contextInitialized(EurekaServerBootstrap.java:70)
+	... 2 common frames omitted
+2024-11-15 22:59:35 [INFO] [main] [c.netflix.discovery.DiscoveryClient] - Shutting down DiscoveryClient ...
+2024-11-15 22:59:35 [INFO] [main] [c.netflix.discovery.DiscoveryClient] - Completed shut down of DiscoveryClient
+2024-11-15 22:59:35 [INFO] [main] [o.s.b.a.l.ConditionEvaluationReportLogger] - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-11-15 22:59:35 [ERROR] [main] [o.s.b.d.LoggingFailureAnalysisReporter] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8761 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8761 or configure this application to listen on another port.
+

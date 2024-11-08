@@ -1,8 +1,8 @@
-name: dev-build-phase
+name: prod-build-phase
 on:
   push:
     branches:
-      - "main"
+      - main
 
 jobs:
   deploy:
@@ -18,6 +18,9 @@ jobs:
 
       - name: Build with Maven
         run: mvn -B package --file pom.xml
+
+      - name: Run SonarQube
+        run: mvn sonar:sonar -Dsonar.projectKey=${{secrets.SONAR_KEY}} -Dsonar.projectName=${{secrets.SONAR_KEY}} -Dsonar.host.url=${{secrets.SONAR_URL}} -Dsonar.login=${{secrets.SONAR_TOKEN}}
 
       - name: upload file
         uses: appleboy/scp-action@master
@@ -38,4 +41,4 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           port: ${{ secrets.SSH_PORT }}
           script_stop: true
-          script: "./startup.sh 8761 eureka"
+          script: "./startup.sh eureka 8761"
